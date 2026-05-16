@@ -1,6 +1,17 @@
-# AidChain
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Tasfia-17/aidchain/main/public/logo.svg" alt="AidChain Logo" width="80" />
+  <h1>AidChain</h1>
+  <p>Transparent humanitarian aid distribution using milestone-based escrow, AI verification, and biometric proof. Built on Stellar with Trustless Work.</p>
 
-Transparent humanitarian aid distribution using milestone-based escrow, AI verification, and biometric proof. Built on Stellar with Trustless Work.
+  <a href="https://viewer.trustlesswork.com/CAPYVLX7GXIM3UQI3BYCKUOTFIFFNRRBALQFX3LX7LZ4Q4L3YL5UWG2W">
+    <img src="https://img.shields.io/badge/Live%20Escrow-Stellar%20Testnet-brightgreen" alt="Live Escrow" />
+  </a>
+  <a href="https://github.com/Tasfia-17/aidchain">
+    <img src="https://img.shields.io/badge/License-MIT-blue" alt="MIT License" />
+  </a>
+</div>
+
+---
 
 ---
 
@@ -209,11 +220,43 @@ git clone https://github.com/Tasfia-17/aidchain.git
 cd aidchain
 npm install
 cp .env.example .env
-# Add your Trustless Work API key to .env
+# Add your Trustless Work API key to .env (optional for demo mode)
 npm run dev
 ```
 
 Open http://localhost:5173
+
+## Test Locally (Full Demo Flow)
+
+```bash
+# 1. Install dependencies
+npm install
+
+# 2. Copy env file
+cp .env.example .env
+
+# 3. Start dev server
+npm run dev
+# App runs at http://localhost:5173
+
+# 4. Build for production
+npm run build
+# Output in dist/
+```
+
+**Demo walkthrough in the browser:**
+
+1. Go to **Dashboard** tab
+2. Under **Donor** -- type a project name and click "Deploy Escrow"
+3. Watch the live contract address appear with the Escrow Viewer link
+4. Switch to **Field Worker** tab -- click "Submit Evidence" on Milestone 1
+5. Watch the AI agent verify in the activity log
+6. Switch to **Field Monitor** tab -- click "Approve and Release"
+7. Repeat steps 4-6 for milestones 2 and 3
+8. Watch the Hypercert mint after all milestones complete
+
+The Escrow Viewer link in the dashboard points to the real live contract on Stellar testnet:
+https://viewer.trustlesswork.com/CAPYVLX7GXIM3UQI3BYCKUOTFIFFNRRBALQFX3LX7LZ4Q4L3YL5UWG2W
 
 ---
 

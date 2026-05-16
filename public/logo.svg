@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <rect width="80" height="80" rx="20" fill="#000000"/>
+  <!-- Chain link left -->
+  <rect x="10" y="32" width="22" height="16" rx="8" fill="none" stroke="#cfdaf5" stroke-width="4"/>
+  <!-- Chain link right -->
+  <rect x="48" y="32" width="22" height="16" rx="8" fill="none" stroke="#cfdaf5" stroke-width="4"/>
+  <!-- Center connector -->
+  <rect x="30" y="36" width="20" height="8" rx="4" fill="#cfdaf5"/>
+  <!-- Aid cross -->
+  <rect x="36" y="14" width="8" height="20" rx="2" fill="#ffffff"/>
+  <rect x="28" y="22" width="24" height="8" rx="2" fill="#ffffff"/>
+</svg>
